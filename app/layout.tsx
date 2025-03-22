@@ -17,7 +17,7 @@ export const metadata: Metadata = siteMetadata
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`dark ${inter.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" sizes="any" />

@@ -17,6 +17,9 @@ importers:
       react-dom:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
+      tailwind-merge:
+        specifier: ^2.4.0
+        version: 2.6.0
     devDependencies:
       '@types/node':
         specifier: latest
@@ -1523,6 +1526,9 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  tailwind-merge@2.6.0:
+    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
 
   tailwindcss@3.3.5:
     resolution: {integrity: sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==}
@@ -3350,6 +3356,8 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tailwind-merge@2.6.0: {}
 
   tailwindcss@3.3.5:
     dependencies:

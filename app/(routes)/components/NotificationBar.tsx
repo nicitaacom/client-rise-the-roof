@@ -1,3 +1,4 @@
+import { consts } from "@/consts/consts"
 import Image from "next/image"
 import { twMerge } from "tailwind-merge"
 
@@ -30,13 +31,13 @@ export function NotificationBar() {
         className="text-xl laptop:text-base"
         iconSrc="/notification-bar/time.svg"
         altText="exp"
-        text="20 Years of experience"
+        text={`${consts.yoe} years of experience`}
       />
       <Item
         className="hidden tablet:flex text-xl laptop:text-base"
         iconSrc="/notification-bar/guarantee.svg"
         altText="grnt"
-        text="10 years guarantee"
+        text={`${consts.yog} years guarantee`}
       />
       <Item
         className="hidden laptop:flex text-xl laptop:text-base"

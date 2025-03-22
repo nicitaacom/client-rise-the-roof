@@ -5,6 +5,7 @@ export const businessInfo = {
   phone: "+447525996949",
   email: "raisetheroof2005@gmail.com",
   websiteUrl: "https://raise-the-roof-newcastle.co.uk",
+  yellPagesUrl: "https://www.yell.com/biz/raise-the-roof-newcastle-upon-tyne-10914140/",
   logoUrl: "https://i.imgur.com/kZsZHQo.png",
 
   // Location info

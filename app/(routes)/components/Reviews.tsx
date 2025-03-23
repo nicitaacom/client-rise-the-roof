@@ -66,7 +66,7 @@ export function Reviews() {
     <section className="bg-foreground rounded-lg flex flex-col gap-y-4 px-2 mobile:px-4 tablet:px-8 py-8">
       <h1 className="text-2xl font-bold text-center">What out clients write about us</h1>
 
-      <ul className="max-h-[400px] overflow-x-scroll flex flex-col laptop:flex-row gap-4">
+      <ul className="max-h-[400px] overflow-x-auto flex flex-col laptop:flex-row gap-4">
         {consts.reviews.map((review, index) => (
           <GoogleReview
             key={index}

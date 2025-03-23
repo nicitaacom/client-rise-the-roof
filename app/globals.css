@@ -4,9 +4,10 @@
 
 @layer base {
   .dark {
-    --brand: 137deg 82% 51%;
+    --brand: 238deg 100% 35%;
     --background: 0deg 0% 7%;
-    --foreground: 0deg 0% 16%;
+    --foreground: 0deg 0% 28%; /* #484848 */
+    --foreground-accent: 0deg 0% 38%; /* #606060 */
     --title: 0deg 0% 88%;
     --title-foreground: 0deg 0% 10%;
     --subTitle: 0deg 0% 60%;
@@ -39,7 +40,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label,
+input {
   color: hsl(var(--title));
 }
 

@@ -16,7 +16,10 @@ interface SocialItemProps {
 
 function SocialItem({ className, iconSrc, altText, text, href }: SocialItemProps) {
   return (
-    <Link className={twMerge("flex flex-col justify-center items-center gap-x-2", className)} href={href}>
+    <Link
+      className={twMerge("flex flex-col justify-center items-center gap-x-2", className)}
+      href={href}
+      target="_blank">
       <Image
         className="w-[24px] h-[24px] laptop:w-[16px] laptop:h-[16px]"
         src={iconSrc}

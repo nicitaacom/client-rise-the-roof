@@ -2,16 +2,20 @@ import { ContactUsForm } from "./components/ContactUsForm"
 import { Header } from "./components/Header/Header"
 import { HowWeCanHelpYou } from "./components/HowWeCanHelpYou"
 import { NotificationBar } from "./components/NotificationBar"
+import { Reviews } from "./components/Reviews"
 
 export default function Page() {
   return (
     <main className="flex flex-col">
       <NotificationBar />
       <Header />
-      <section className="flex flex-col desktop:flex-row justify-between gap-6 px-4 desktop:px-16 pt-24">
-        <HowWeCanHelpYou />
-        <ContactUsForm />
-      </section>
+      <div className="flex flex-col gap-y-12 px-2 mobile:px-4 tablet:px-8 laptop:px-16 py-12 mobile:py-16 laptop:py-24">
+        <section className="flex flex-col desktop:flex-row justify-between gap-6">
+          <HowWeCanHelpYou />
+          <ContactUsForm />
+        </section>
+        <Reviews />
+      </div>
     </main>
   )
 }

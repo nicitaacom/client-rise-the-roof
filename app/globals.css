@@ -62,3 +62,29 @@ body {
   flex-flow: column;
   min-height: 100vh;
 }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1c2d82 #000000;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1c2d82;
+  border-radius: 16px; /* This works for Webkit browsers */
+  border: 2px inset #ff6666;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ff6666; /* Optional: Change color on hover */
+}

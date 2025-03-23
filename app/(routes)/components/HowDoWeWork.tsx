@@ -29,11 +29,10 @@ function Tab({
   return (
     <button
       onClick={() => onClick(buttonText)}
-      className={`tablet:w-fit flex flex-row justify-center tablet:justify-start items-center gap-x-1 px-2 py-1 rounded text-title uppercase ${
-        isSelected ? "bg-foreground text-background" : "bg-background text-foreground border border-foreground"
-      }`}>
+      className={`tablet:w-fit flex flex-row justify-center tablet:justify-start items-center gap-x-1 px-2 py-1 rounded text-title uppercase border duration-75
+        ${isSelected ? "bg-foreground text-background" : "bg-background text-foreground"}`}>
       {buttonText}
-      <Image src={iconSrc} alt="icon" width={24} height={24} />
+      <Image className="w-[20px] h-[20px]" src={iconSrc} alt="icon" width={20} height={20} />
     </button>
   )
 }
@@ -72,7 +71,8 @@ export function HowDoWeWork() {
       {/* Display steps for selected tab */}
       {selectedTabContent && (
         <div className="mt-6">
-          <h4 className="text-xl mb-4">{selectedTabContent.text} Process:</h4>
+          {/* Decided to comment it */}
+          {/* <h4 className="text-xl mb-4">{selectedTabContent.text} Process:</h4> */}
 
           <div className="flex flex-col laptop:flex-row flex-wrap gap-4">
             {selectedTabContent.steps.map((step, index) => (
@@ -81,7 +81,7 @@ export function HowDoWeWork() {
                 key={`step-${index}`}>
                 <div className="flex items-center gap-x-2">
                   {step.iconSrc && step.iconSrc !== "/" && (
-                    <Image src={step.iconSrc} alt={step.title} width={32} height={32} />
+                    <Image className="w-auto h-auto" src={step.iconSrc} alt={step.title} width={32} height={32} />
                   )}
                   <h5 className="font-bold">{step.title}</h5>
                 </div>

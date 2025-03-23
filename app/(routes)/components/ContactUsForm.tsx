@@ -17,7 +17,7 @@ export function ContactUsForm() {
     message: "",
   })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({
       ...prev,
@@ -30,13 +30,13 @@ export function ContactUsForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full flex flex-col gap-2 bg-foreground p-4 rounded-lg">
+    <form onSubmit={handleSubmit} className="w-full max-w-[500px] flex flex-col gap-2 bg-foreground p-4 rounded-lg">
       <h1 className="text-title text-2xl font-bold text-center desktop:text-start">Contact us</h1>
       <div className="grid grid-cols-[35%,65%] gap-x-2">
         <Input
           type="text"
-          id="myNameIs"
-          name="myNameIs"
+          id="name"
+          name="name"
           label="My name is"
           value={formData.name}
           onChange={handleChange}
@@ -53,15 +53,20 @@ export function ContactUsForm() {
         />
       </div>
 
-      <Input
-        type="text"
-        id="message"
-        name="message"
-        label="I want"
-        value={formData.message}
-        onChange={handleChange}
-        placeholder="Get my roof done"
-      />
+      <div>
+        <label className="block text-sm font-medium" htmlFor="message">
+          I want
+        </label>
+        <textarea
+          className={`w-full bg-[#303030] text-lg focus:ring-2 focus:outline-none px-2 py-1 text-title
+            disabled:brightness-50 disabled:cursor-default`}
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Get my roof done"
+        />
+      </div>
 
       <button
         type="submit"

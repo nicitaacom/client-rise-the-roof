@@ -37,7 +37,7 @@ function GoogleReview({ className, usrAvatarUrl, username, date, amountOfStarts,
             .map((star, index) => (
               <Image
                 key={`${star}-${index}-${username}-${amountOfStarts}-${usrAvatarUrl}`}
-                className="w-[22px] h-[22px] laptop:w-[16px] laptop:h-[16px]"
+                className="w-[22px] h-[22px] laptop:w-[20px] laptop:h-[20px]"
                 src="/star.svg"
                 alt="star"
                 width={22}
@@ -47,7 +47,7 @@ function GoogleReview({ className, usrAvatarUrl, username, date, amountOfStarts,
         </div>
       </div>
 
-      <p className="w-full text-title text-start desktop:text-lg p-1 desktop:p-0">
+      <p className="w-full text-title text-start text-sm p-1 desktop:p-0 desktop:pl-0.5">
         {displayedText}
         {isTruncated && (
           <Link

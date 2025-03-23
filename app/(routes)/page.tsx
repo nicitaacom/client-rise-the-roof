@@ -1,5 +1,6 @@
 import { ContactUsForm } from "./components/ContactUsForm"
 import { Header } from "./components/Header/Header"
+import { HowDoWeWork } from "./components/HowDoWeWork"
 import { HowWeCanHelpYou } from "./components/HowWeCanHelpYou"
 import { NotificationBar } from "./components/NotificationBar"
 import { Reviews } from "./components/Reviews"
@@ -15,6 +16,7 @@ export default function Page() {
           <ContactUsForm />
         </section>
         <Reviews />
+        <HowDoWeWork />
       </div>
     </main>
   )

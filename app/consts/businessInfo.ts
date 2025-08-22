@@ -7,6 +7,7 @@ export const businessInfo = {
   websiteUrl: "https://raise-the-roof-newcastle.co.uk",
   yellPagesUrl: "https://www.yell.com/biz/raise-the-roof-newcastle-upon-tyne-10914140/",
   logoUrl: "https://i.imgur.com/kZsZHQo.png",
+  cta: "FREE roof check",
 
   // Location info
   address: "Angerton Gardens",

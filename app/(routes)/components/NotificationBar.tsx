@@ -1,3 +1,4 @@
+import { businessInfo } from "@/consts/businessInfo"
 import { consts } from "@/consts/consts"
 import Image from "next/image"
 import { twMerge } from "tailwind-merge"
@@ -49,7 +50,7 @@ export function NotificationBar() {
         className="hidden laptop:flex text-xl laptop:text-base"
         iconSrc="/notification-bar/free.svg"
         altText="free"
-        text="FREE roof check"
+        text={businessInfo.cta}
       />
     </section>
   )

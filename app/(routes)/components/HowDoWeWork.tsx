@@ -4,14 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 
 import { consts } from "@/consts/consts"
-
-type TSelectedTab =
-  | "New roof"
-  | "Roof repair"
-  | "Window in roof"
-  | "Flat Bitumen Roofs"
-  | "Fascia and Soffit Installation"
-  | "Dry Ridge System"
+import { TSelectedTab, selectedTabOptions } from "@/consts/howDoWeWork"
 
 function Tab({
   selectedTab,
@@ -38,7 +31,7 @@ function Tab({
 }
 
 export function HowDoWeWork() {
-  const [selectedTab, setSelectedTab] = useState<TSelectedTab>("New roof")
+  const [selectedTab, setSelectedTab] = useState<TSelectedTab>(selectedTabOptions[0])
 
   // Handler for tab click
   const handleTabClick = (tab: TSelectedTab) => {
